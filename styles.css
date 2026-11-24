@@ -48,23 +48,21 @@ button, input { font: inherit; }
 
 .chapter-nav { margin-top: 34px; }
 .chapter-nav h2, .transcript h2 { margin: 0; font: 750 1.35rem/1.4 var(--serif); letter-spacing: .08em; }
-.chapter-list { margin: 15px 0 0; padding: 0; list-style: none; }
+.chapter-list { margin: 15px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
 .chapter { min-height: 59px; display: flex; align-items: center; gap: 10px; padding: 12px 14px; }
 .chapter-open { gap: 13px; min-height: 77px; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 4px; text-decoration: none; }
 .chapter-open:hover { border-color: var(--accent); }
 .chapter-icon { width: 42px; height: 42px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 50%; color: #fff6ee; background: var(--accent); }
 .chapter-info { display: grid; gap: 2px; }
 .chapter-info strong { font-size: 1.055rem; }
-.chapter-info span, .chapter-pending small { color: var(--muted); font-size: .8rem; }
+.chapter-info span { color: var(--muted); font-size: .8rem; }
 .chapter-arrow { margin-inline: auto 3px; color: var(--accent); flex: 0 0 auto; }
-.chapter-pending { justify-content: space-between; border-bottom: 1px solid var(--line); font-size: .94rem; }
-.chapter-pending small { display: inline-block; margin-right: .55em; }
-.chapter-status { flex: 0 0 auto; color: var(--muted); font-size: .76rem; }
 
 .chapter-main { border-top: 1px solid var(--line); }
 .back-link { display: inline-flex; align-items: center; min-height: 48px; gap: 7px; color: var(--accent); font-size: .875rem; text-decoration: none; }
 .back-link:hover, .back-link:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 .chapter-main > h1 { margin: 8px 0 23px; font: 800 clamp(2.4rem, 9vw, 3.55rem)/1.15 var(--serif); letter-spacing: .1em; }
+.chapter-prefix { display: block; margin-bottom: 8px; color: var(--muted); font: 650 .95rem/1.45 var(--sans); letter-spacing: .12em; }
 .player-card { background: #332722; color: #fff6ed; padding: 17px clamp(15px, 5vw, 26px) 18px; border-radius: 4px; }
 .player-card h2 { margin: 0 0 9px; font: 650 .87rem/1.4 var(--sans); letter-spacing: .1em; }
 .player-card audio { width: 100%; display: block; }
@@ -90,6 +88,8 @@ button, input { font: inherit; }
 .player-times { display: flex; justify-content: space-between; font-size: .76rem; color: #f0e3d9; font-variant-numeric: tabular-nums; }
 .player-error { margin: 12px 0 0; font-size: .87rem; }
 .transcript { margin-top: 22px; padding: clamp(18px, 5vw, 30px); border: 1px solid var(--line); border-radius: 4px; background: var(--card); }
+.transcript h3 { margin: 25px 0 8px; font: 750 1.13rem/1.55 var(--serif); }
+.transcript h3 + p { margin-top: 8px; }
 .transcript p { margin: 16px 0 0; line-height: 1.95; overflow-wrap: anywhere; }
 @media (max-width: 360px) {
   .site-shell { width: calc(100% - 32px); }

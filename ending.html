@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="滇西抗战纪念馆结语的普通话语音讲解与简体中文讲解词。">
+  <title>结语 · 滇西抗战纪念馆语音导览</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./player.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="masthead">
+      <span class="museum-name">滇西抗战纪念馆</span>
+      <span class="guide-label">语音导览</span>
+    </header>
+    <main class="chapter-main">
+      <a class="back-link" href="./index.html">
+        <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10H4m5-5-5 5 5 5"/></svg>
+        返回目录
+      </a>
+      <h1>结语</h1>
+      <section class="player-card" aria-labelledby="audio-heading">
+        <h2 id="audio-heading">普通话讲解</h2>
+        <audio id="narration" controls preload="metadata" src="./assets/ending.mp3" aria-label="结语普通话讲解">
+          <a href="./assets/ending.mp3">下载结语讲解 MP3</a>
+        </audio>
+        <div class="player-controls" id="player-controls" hidden>
+          <button class="play-toggle" id="play-toggle" type="button" aria-label="播放讲解" data-state="paused">
+            <svg class="play-icon" viewBox="0 0 24 24" width="25" height="25" fill="currentColor" aria-hidden="true"><path d="M8 4.7a1 1 0 0 1 1.6-.8l11 7.3a1 1 0 0 1 0 1.6l-11 7.3A1 1 0 0 1 8 19.3Z"/></svg>
+            <svg class="pause-icon" viewBox="0 0 24 24" width="25" height="25" fill="currentColor" aria-hidden="true"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></svg>
+          </button>
+          <div class="player-track">
+            <input class="seek" id="seek" type="range" aria-label="播放进度" min="0" max="1" value="0" step="0.1" disabled>
+            <div class="player-times" aria-hidden="true"><span id="elapsed">0:00</span><span id="duration">—</span></div>
+          </div>
+        </div>
+        <p id="player-error" class="player-error" role="status" hidden>播放遇到问题，请重试或<a href="./assets/ending.mp3">打开 MP3</a>。</p>
+      </section>
+      <section class="transcript" aria-labelledby="transcript-heading">
+        <h2 id="transcript-heading">讲解词</h2>
+        <p>前事不忘，后事之师。在艰苦卓绝的抗日战争中，数十万中国远征军、反法西斯盟军、广大爱国华侨华人和云南各族人民团结一心，英勇牺牲，为彻底击败日本法西斯，作出了不可磨灭的贡献，用无畏的勇气和坚定的信念书写了“一寸山河一寸血”的伟大篇章。这是中华民族不屈不挠、英勇抗争精神的真实写照。</p>
+        <p>中国人民抗日战争的伟大胜利，将永远铭刻在中华民族史册上！永远铭刻在人类正义事业史册上！今天，我们站在新的历史起点，回望过去，应铭记历史、缅怀先烈、珍爱和平、开创未来。让我们继承和发扬伟大的抗战精神，为实现中华民族伟大复兴而努力奋斗！</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
